@@ -1,0 +1,52 @@
+
+.root {
+  height: 100%;
+  user-select: none;
+} 
+
+:global {
+  .state_node {
+    cursor: pointer;
+  }
+
+  .state_node-hide {
+    display: none;
+  }
+
+  .state_node circle {
+    fill: #fff;
+    stroke: steelblue;
+    stroke-width: 2px;
+    transition: all .3s;
+  }
+
+  .state_node:hover circle {
+    stroke-width: 4px;
+    stroke: #328BD5;
+  }
+  
+  .state_node text {
+    font-size: 10px;
+  }
+  
+  .relation_link {
+    fill: none;
+    stroke: #ccc;
+    stroke-width: 2px;
+    cursor: pointer;
+    transition: all .3s;
+  }
+
+  .relation_link-hide {
+    display: none;
+  }
+
+  .relation_link:hover {
+    stroke-width: 6px;
+    stroke: #787777;
+  }
+}
+
+
+
+  
